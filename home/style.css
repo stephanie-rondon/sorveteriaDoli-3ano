@@ -16,6 +16,11 @@ header {
     color: white;
     text-align: center;
     padding: 20px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
 }
 
 header h1 {
@@ -31,7 +36,6 @@ header p {
 nav ul {
     list-style: none;
     display: flex;
-    justify-content: center;
     gap: 20px;
 }
 
@@ -40,13 +44,15 @@ nav a {
     text-decoration: none;
     font-weight: bold;
     background-color: #ff527b;
-    padding: 8px 16px;
+    padding: 8px 18px;
     border-radius: 20px;
-    transition: background 0.3s;
+    transition: background 0.3s, transform 0.2s;
+    display: inline-block;
 }
 
 nav a:hover {
     background-color: #e0315b;
+    transform: translateY(-2px);
 }
 
 .container {
@@ -74,7 +80,7 @@ nav a:hover {
     border-radius: 12px;
     padding: 20px;
     flex: 1;
-    min-width: 250px;
+    min-width: 200px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.05);
     transition: transform 0.2s;
 }
